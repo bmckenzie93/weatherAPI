@@ -1,0 +1,99 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+
+/* HEADER */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* MAIN CONTENT */
+.container {
+  display: flex;
+}
+
+/* sidebar */
+.sidebar {
+  padding: 2rem;
+  width: 40%;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+#search {
+  padding: .5rem;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+.search-label {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.group {
+  margin-bottom: 2rem;
+}
+
+#searchBtn {
+  padding: .5rem;
+  font-size: 1.3rem;
+  margin-left: -10px;
+  background-color: #0088ff;
+  color: #fff;
+}
+
+/* search history */
+.history-card {
+  background-color: #fff;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+/* MAIN APPLICATION */
+.main {
+  width: 60%;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.current-city {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  /* MAIN CONTENT */
+  .container {
+    flex-direction: column;
+  }
+
+  /* sidebar */
+  .sidebar {
+    width: 100%;
+    text-align: center;
+    min-height: 0;
+  }
+
+  /* MAIN APPLICATION */
+  .main {
+    width: 100%;
+    min-height: 0;
+    text-align: center;
+  }
+}
